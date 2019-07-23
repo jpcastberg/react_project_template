@@ -4,7 +4,10 @@
   "description": "Minesweeper built with React!",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -d -w",
+    "start": "reload -d public/ -b",
+    "build-prod": "webpack -p",
+    "start-prod":  "node server/index.js"
   },
   "author": "John Castberg",
   "license": "ISC",
@@ -25,6 +28,7 @@
     "eslint-plugin-react": "^7.14.3",
     "html-webpack-plugin": "^3.2.0",
     "nodemon": "^1.19.1",
+    "reload": "^3.0.1",
     "webpack": "^4.37.0"
   }
 }
