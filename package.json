@@ -1,13 +1,16 @@
 {
-  "name": "minesweeper",
+  "name": "react_project_template",
   "version": "1.0.0",
-  "description": "Minesweeper built with React!",
+  "description": "A template for my React projects",
   "main": "server/index.js",
   "scripts": {
     "build": "webpack -d -w",
     "start": "reload -d public/ -b",
     "build-prod": "webpack -p",
     "start-prod":  "node server/index.js"
+  },
+  "engines" : { 
+    "node" : ">=8.0.0" 
   },
   "author": "John Castberg",
   "license": "ISC",
